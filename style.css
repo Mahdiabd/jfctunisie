@@ -42,9 +42,11 @@ ul{
 .wrapper > *{
   padding: 1em;
 }
-
-#tun{
-  margin-left: 33%;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
 
 .company-info{
