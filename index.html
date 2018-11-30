@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Juventus Fan Club</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>JUVENTUS</span> <span id="fan">Fan Club</span></h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Juventus Fan Club Tunisia</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> Tunis Tunisia</li>
+          <li><i class="fa fa-phone"></i> (+216) 55 725 587</li>
+          <li><i class="fa fa-envelope"></i> jfc_tunisie@gmail.com</li>
+        </ul>
+       <img src="res/juv.png" alt="">
+       <img id="tun" src="res/tunisia.png" alt="" width="25%">
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>City</label>
+            <input type="text" name="city" id="city">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Forza Juventus</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+<script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyARqa-uMjWssJAtvVeBVAgTLIGQX1msAoE",
+    authDomain: "contactform-2b1bc.firebaseapp.com",
+    databaseURL: "https://contactform-2b1bc.firebaseio.com",
+    projectId: "contactform-2b1bc",
+    storageBucket: "contactform-2b1bc.appspot.com",
+    messagingSenderId: "247212784766"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="main.js"></script>
+</body>
+</html>
